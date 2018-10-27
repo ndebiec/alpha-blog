@@ -1,0 +1,13 @@
+<h1 align = "center">Listing all Ruby Bloggers</h1>
+
+<% @users.each do |user| %>
+  <div class="row">
+    <div class="well col-md-4 col-md-offset-4 center">
+       <ul class="usertiles">
+         <li> <%= link_to gravatar_for(user), user_path(user) %> </li>
+         <li> <%= user.username %> </li>
+         <li> <small> <%= pluralize(user.articles.count, "article") if user.articles %> </small> </li>
+       </ul>
+    </div>
+</div>
+<% end %>
