@@ -1,0 +1,12 @@
+<h1>This is category index</h1>
+
+<% @categories.each do |cat| %>
+  <div class="row">
+    <div class="well col-md-4 col-md-offset-4 center">
+       <ul class="usertiles">
+        <li class="article-title"> <%= link_to "#{cat.name}", category_path(cat) %> </li>
+       </ul>
+    </div>
+  </div>
+<% end %>
+
