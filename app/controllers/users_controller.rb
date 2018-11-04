@@ -9,7 +9,7 @@ before_action :require_admin, only: [:destroy]
   end
 
   def index
-  @users = User.all
+    @users = User.all
   end
 
   def create
@@ -67,9 +67,4 @@ before_action :require_admin, only: [:destroy]
     end
   end
   
-  
-  
-  
-  
-
 end

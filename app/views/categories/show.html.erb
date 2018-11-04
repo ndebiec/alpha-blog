@@ -1,1 +1,4 @@
-<h1>Listing all entries in category</h1>
+<h1 align="center">Listing all entries about <%= @category.name %></h1>
+<p>
+  <%= render 'articles/list', obj: @category.articles %>
+</p>

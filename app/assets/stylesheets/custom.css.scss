@@ -80,18 +80,37 @@ margin-bottom: 15px;
   font-size: 1.5em;
 }
 
+.article-title a{
+  color: #404040;
+}
+
 .article-body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .article-meta-details {
-  margin-top: 15px; 
+  margin-top: 15px;
 }
 
 .usertiles {
   list-style: none;
   margin: 0;
   padding: 0;
-  
+}
+
+.badge {
+  background-color: #ffb3b3;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.badge a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.input_checkbox input {
+  width: auto !important;
 }
