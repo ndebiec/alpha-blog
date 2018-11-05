@@ -24,7 +24,7 @@ $navbar-default-bg: #c90c3e;
   background-repeat: no-repeat;
   background-position: center top;
   background-color: #fff;
-  height: 500px;
+  height: 490px;
   padding-top: 200px;
 }
 
@@ -113,4 +113,8 @@ margin-bottom: 15px;
 
 .input_checkbox input {
   width: auto !important;
+}
+
+.row {
+margin: 0;
 }
