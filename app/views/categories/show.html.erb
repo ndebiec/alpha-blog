@@ -1,4 +1,12 @@
-<h1 align="center">Listing all entries about <%= @category.name %></h1>
+<h1 align="center">Category: <%= @category.name %></h1>
+
+<% if logged_in? && current_user.admin? %>
+  <div class="row" align="center">
+    <%= link_to "Edit category name", edit_category_path(@category) %>
+  </div>
+<% end %>
+
 <p>
   <%= render 'articles/list', obj: @category.articles %>
 </p>
+
