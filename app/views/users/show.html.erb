@@ -13,5 +13,5 @@
 </h4>
 
 <p>
-  <%= render 'articles/list', obj: @user.articles %>
+  <%= render 'articles/list', obj: @user.articles.order(updated_at: :desc) %>
 </p>
